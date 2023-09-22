@@ -95,15 +95,16 @@ Within the addNumbers function, invoke the callback function as many times as ne
 Return the modified array.
 ------------------------------------------------------------------------------------------------ */
 
-const addValues = (arr, value) => {
-  arr.push(value);
-  return arr;
+const addValues = (arr, num) => {
+  arr.push(num);
 };
 
 const addNumbers = (num, arr, times, callback) => {
-  let somearray = Array(times).fill(num);
-  return somearray;
+  let somearray = Array(times).fill();
+  somearray.forEach(() => callback(arr, num));
+  return arr;
 };
+
 
 /* ------------------------------------------------------------------------------------------------
 
