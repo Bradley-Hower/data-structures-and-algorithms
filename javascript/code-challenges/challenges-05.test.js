@@ -193,6 +193,7 @@ const countNumberOfChildren = (arr) => {
   let arraycombiner = (a,b) => {
     return a.concat(b.children);
   };
+
   let anarray = arr.reduce(arraycombiner, []);
   let addchild = (e) => e + 1;
   let haschild = (e) => {if(e === true){
