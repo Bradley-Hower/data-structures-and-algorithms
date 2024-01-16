@@ -73,3 +73,8 @@ def test_includes_false():
     linked_list.insert("banana")
 
     assert not linked_list.includes("cucumber")
+
+@pytest.fixture
+def test_target_error():
+    linked_list = LinkedList()
+    return linked_list.insert()
