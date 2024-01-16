@@ -15,10 +15,6 @@ class LinkedList:
         nodes.append("NULL")
         return " -> ".join(nodes)
 
-    def some_method(self):
-        # method body here
-        pass
-
     def insert(self, value):
         new_node = Node(value)
         if self.head is None:
@@ -42,4 +38,9 @@ class Node:
         self.next = None
 
 class TargetError:
-    pass
+    try:
+        LinkedList.includes()
+        LinkedList.insert()
+    except TypeError:
+        print("Error. Don't forget to pass a value in. Can not process without one.")
+
