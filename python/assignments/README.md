@@ -12,3 +12,4 @@ Module 1
 
 ---
 Module 2
+- Entry 6: [Code Challenge - Linked List Insertions](https://bradley-hower.github.io/data-structures-and-algorithms/python/assignments/class-06)
