@@ -35,13 +35,18 @@ class LinkedList:
 
     """Rolls through linked list until at end. Modifies linked list, adding new node to end"""
     def append(self, value):
-        current_node = self.head
-        while(current_node):
-            if(current_node.next == None):
-                current_node.next = Node(value)
-                return
-            else:
-                current_node = current_node.next
+        new_node = Node(value)
+        if self.head is None:
+            self.head = new_node
+            return
+        else:
+            current_node = self.head
+            while(current_node):
+                if(current_node.next == None):
+                    current_node.next = Node(value)
+                    return
+                else:
+                    current_node = current_node.next
 
     """Selectively adds new node before a specified node, indicated by value. Raises exception if no nodes are present"""
     def insert_before(self, value, new_value):
@@ -108,45 +113,31 @@ class LinkedList:
 
     """Selects and return element from x places from the tail. If x is beyond range, raises TargetErrror."""
     def kth_from_end(self, kplaces):
-        somelist = []
+        somelist_index = 0
         current_node = self.head
-        while(current_node):
-            somelist.append(current_node.value)
+
+        # Creates total index numbers
+        while(current_node is not None):
+            somelist_index += 1
             current_node = current_node.next
-        if kplaces + 1 > len(somelist):
+
+        somelist_index -= 1
+        node_number_select = somelist_index - kplaces
+
+        # TargetErrors
+        if somelist_index - kplaces < 0 :
             raise TargetError
         elif kplaces < 0:
             raise TargetError
-        indexval = len(somelist) - kplaces - 1
-        return somelist[indexval]
 
-def zip_lists(list1, list2):
-    # Create a new linked list to store the zipped result
-    zipped_list = LinkedList()
-
-    current1 = list1.head
-    current2 = list2.head
-
-    while current1 and current2:
-        # Append a node from list1 to the zipped list
-        zipped_list.append(current1.value)
-        current1 = current1.next
-
-        # Append a node from list2 to the zipped list
-        zipped_list.append(current2.value)
-        current2 = current2.next
-
-    # If list1 is longer, append the remaining nodes to the zipped list
-    while current1:
-        zipped_list.append(current1.value)
-        current1 = current1.next
-
-    # If list2 is longer, append the remaining nodes to the zipped list
-    while current2:
-        zipped_list.append(current2.value)
-        current2 = current2.next
-
-    return zipped_list
+        # Traverse linked list
+        current_node = self.head
+        current_node_number = 0
+        while(current_node):
+            if current_node_number == node_number_select:
+                return current_node.value
+            current_node_number += 1
+            current_node = current_node.next
 
 class Node:
     "Creates new node. Node holds value and indicates next node linked to."
@@ -157,3 +148,4 @@ class Node:
 """Raises exception error in case of exception"""
 class TargetError(Exception):
     pass
+
