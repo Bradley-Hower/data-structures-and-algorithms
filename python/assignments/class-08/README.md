@@ -10,6 +10,10 @@ Kth place from the Value Additions:
 
 Able to locate a node and return the value from k places from the tail. Raises errors if k places exceeds list lenghth or is less than zero.
 
+Zipped:
+
+Able to combine two lists in alternating fashion, regarding of differing lengths. Longer list's elements are appended to end.
+
 ## Whiteboard Process
 
 ![whiteboard_class06](/codechallenge08.jpg)

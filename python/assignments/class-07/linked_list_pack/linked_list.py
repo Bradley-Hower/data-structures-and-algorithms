@@ -108,19 +108,31 @@ class LinkedList:
 
     """Selects and return element from x places from the tail. If x is beyond range, raises TargetErrror."""
     def kth_from_end(self, kplaces):
-        somelist = []
+        somelist_index = 0
         current_node = self.head
-        while(current_node):
-            somelist.append(current_node.value)
+
+        # Creates total index numbers
+        while(current_node is not None):
+            somelist_index += 1
             current_node = current_node.next
-        if kplaces + 1 > len(somelist):
+
+        somelist_index -= 1
+        node_number_select = somelist_index - kplaces
+
+        # TargetErrors
+        if somelist_index - kplaces < 0 :
             raise TargetError
         elif kplaces < 0:
             raise TargetError
-        indexval = len(somelist) - kplaces - 1
-        return somelist[indexval]
 
-
+        # Traverse linked list
+        current_node = self.head
+        current_node_number = 0
+        while(current_node):
+            if current_node_number == node_number_select:
+                return current_node.value
+            current_node_number += 1
+            current_node = current_node.next
 
 class Node:
     "Creates new node. Node holds value and indicates next node linked to."
