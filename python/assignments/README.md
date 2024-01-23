@@ -15,3 +15,10 @@ Module 2
 
 - Entry 6: [Code Challenge - Linked List Insertions](https://bradley-hower.github.io/data-structures-and-algorithms/python/assignments/class-06)
 - Entry 7: [Code Challenge - K-th Value](https://bradley-hower.github.io/data-structures-and-algorithms/python/assignments/class-07)
+- Entry 8: [Code Challenge - Zip Lists](https://bradley-hower.github.io/data-structures-and-algorithms/python/assignments/class-08)
+- Entry 10: [Code Challenge - Stacks and Queues](https://bradley-hower.github.io/data-structures-and-algorithms/python/assignments/class-10)
+
+---
+Module 3
+
+- Entry 11: [Code Challenge - Pseudo Stack Queue](https://bradley-hower.github.io/data-structures-and-algorithms/python/assignments/class-11)
