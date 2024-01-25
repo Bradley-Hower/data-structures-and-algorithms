@@ -4,7 +4,7 @@ Creating a pseduo queue by only using two stacks, no queues.
 
 ## Whiteboard Process
 
-![whiteboard_class11](/codechallenge11.jpg)
+![whiteboard_class11](codechallenge11.jpg)
 
 ## Approach & Efficiency
 

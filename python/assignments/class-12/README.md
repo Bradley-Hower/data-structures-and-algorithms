@@ -4,7 +4,7 @@ Creating an animal shelter which houses cats and dogs. These dogs and cats are s
 
 ## Whiteboard Process
 
-![whiteboard_class11](/codechallenge12.jpg)
+![whiteboard_class11](codechallenge12.jpg)
 
 ## Approach & Efficiency
 

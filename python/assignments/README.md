@@ -22,3 +22,5 @@ Module 2
 Module 3
 
 - Entry 11: [Code Challenge - Pseudo Stack Queue](https://bradley-hower.github.io/data-structures-and-algorithms/python/assignments/class-11)
+- Entry 12: [Code Challenge - Pseudo Stack Queue](https://bradley-hower.github.io/data-structures-and-algorithms/python/assignments/class-12)
+- Entry 13: [Code Challenge - Pseudo Stack Queue](https://bradley-hower.github.io/data-structures-and-algorithms/python/assignments/class-13)

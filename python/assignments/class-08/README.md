@@ -16,7 +16,7 @@ Able to combine two lists in alternating fashion, regarding of differing lengths
 
 ## Whiteboard Process
 
-![whiteboard_class06](/codechallenge08.jpg)
+![whiteboard_class06](codechallenge08.jpg)
 
 ## Approach & Efficiency
 
