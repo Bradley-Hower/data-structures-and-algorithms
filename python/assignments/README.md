@@ -23,4 +23,10 @@ Module 3
 
 - Entry 11: [Code Challenge - Pseudo Stack Queue](https://bradley-hower.github.io/data-structures-and-algorithms/python/assignments/class-11)
 - Entry 12: [Code Challenge - Pseudo Stack Queue](https://bradley-hower.github.io/data-structures-and-algorithms/python/assignments/class-12)
-- Entry 13: [Code Challenge - Pseudo Stack Queue](https://bradley-hower.github.io/data-structures-and-algorithms/python/assignments/class-13)
+- Entry 13: [Code Challenge - Stack Queue Brackets](https://bradley-hower.github.io/data-structures-and-algorithms/python/assignments/class-13)
+- Entry 15: [Code Challenge - Data Trees](https://bradley-hower.github.io/data-structures-and-algorithms/python/assignments/class-15)
+
+---
+Module 4
+
+- Entry 16: [Code Challenge - Max Node Value](https://bradley-hower.github.io/data-structures-and-algorithms/python/assignments/class-16)
