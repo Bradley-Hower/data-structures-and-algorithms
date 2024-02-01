@@ -1,21 +1,26 @@
+from linked_list_pack.queue import Queue
+
 def breadth_first(tree_node):
   """Traverses tree, adds current value to the output and queues any children for future traversal. If no children, continues."""
   if not tree_node.root:
     return []
 
-  queue = [tree_node.root]
+  queue = Queue()
+
+  queue.enqueue(tree_node.root)
 
   output = []
 
-  while(len(queue) > 0):
-    current_node = queue.pop(0)
+  while not queue.is_empty():
+    print(queue)
+    current_node = queue.dequeue()
     output.append(current_node.value)
 
     if current_node.left is not None:
-      queue.append(current_node.left)
+      queue.enqueue(current_node.left)
 
     if current_node.right is not None:
-      queue.append(current_node.right)
+      queue.enqueue(current_node.right)
 
   return output
 

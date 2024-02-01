@@ -11,7 +11,7 @@ class Queue:
 
   def enqueue(self, value):
     new_node = Node(value)
-    if self.rear == None:
+    if self.front == None:
       self.front = self.rear = new_node
       return
     current_node = self.rear
@@ -32,7 +32,7 @@ class Queue:
     return current_front.value
 
   def is_empty(self):
-    if self.front is None or self.rear is None:
+    if self.front is None:
       return True
     else:
       return False
