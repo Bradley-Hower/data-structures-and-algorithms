@@ -32,3 +32,8 @@ Module 4
 - Entry 16: [Code Challenge - Max Node Value](https://bradley-hower.github.io/data-structures-and-algorithms/python/assignments/class-16)
 - Entry 17: [Code Challenge - Breadth-first Traversal](https://bradley-hower.github.io/data-structures-and-algorithms/python/assignments/class-17)
 - Entry 18: [Code Challenge - FizzBuzz](https://bradley-hower.github.io/data-structures-and-algorithms/python/assignments/class-18)
+
+---
+Module 6
+
+- Entry 30: [Code Challenge - Hash Table](https://bradley-hower.github.io/data-structures-and-algorithms/python/assignments/class-30)
