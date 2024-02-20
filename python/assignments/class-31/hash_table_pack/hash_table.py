@@ -99,3 +99,12 @@ class Hashtable:
           current = current.next
 
     return key_list
+
+  def repeat_hash(self, input_str):
+    for word in input_str.split():
+      word_nocommas = word.replace(',', '')
+      word_lower = word_nocommas.lower()
+      if self.has(word_lower):
+        return word_lower
+      else:
+        self.set(word_lower, True)

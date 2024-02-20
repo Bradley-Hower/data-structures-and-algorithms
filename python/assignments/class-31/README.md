@@ -2,17 +2,11 @@
 
 ## Overview
 
-Builds out hashtable functionality. Has set key, get value, and search if has key methods. Method for returning full hash array.
+Builds out hashtable functionality. Has set key, get value, and search if has key methods. Method for returning full hash array. Added function for reapeat hashes.
 
 ## Approach & Efficiency
 
-Hashing method with algorithm which uses following seps in algorithm:
-
-- Multiply ASCII value together.
-- Multiply by prime number, 599.
-- Modulo by hash size.
-
-Utilizes linked lists in case of collisions. Values associated with any given key are cleared when setting if key is already present in linked list.
+Added funtionality, repeat_hash(). Returns first occuring reapeat of a word in a string composed of words. Function utilizes has() function to check if word has already appeared and been hashed. If none is located for a given word, the word is set to the hashtable, using the set() function.
 
 ## Tests
 
