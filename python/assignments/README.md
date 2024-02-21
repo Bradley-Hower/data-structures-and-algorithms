@@ -37,3 +37,11 @@ Module 4
 Module 6
 
 - Entry 30: [Code Challenge - Hash Table](https://bradley-hower.github.io/data-structures-and-algorithms/python/assignments/class-30)
+
+Module 7
+
+---
+
+- Entry 31: [Code Challenge - Hash Repeat Words](https://bradley-hower.github.io/data-structures-and-algorithms/python/assignments/class-31)
+
+- Entry 32: [Code Challenge - Tree Intersection](https://bradley-hower.github.io/data-structures-and-algorithms/python/assignments/class-32)
